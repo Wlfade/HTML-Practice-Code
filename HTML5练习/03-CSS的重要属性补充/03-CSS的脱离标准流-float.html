@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- 根标签 -->
+<html>
+<!-- 头部 -->
+
+<head>
+    <!-- 设置编码 -->
+    <meta charset="UTF-8">
+    <!-- 标题标签 -->
+    <title>03-CSS的脱离标准流-float</title>
+    <!-- 
+        任何一种类型的标签一旦脱离标准流，就会被强制转为行内-块级标签
+     -->
+    <style>
+        #main {
+            width: 400px;
+            height: 200px;
+            background-color: red;
+        }
+        
+        .test1 {
+            background-color: green;
+            /* 浮动 */
+            float: left;
+            width: 200px;
+            height: 50px;
+        }
+        
+        .test2 {
+            background-color: blue;
+            /* 浮动 */
+            float: right;
+            width: 80px;
+            height: 50px;
+        }
+        
+        .test3 {
+            background-color: rgb(12, 12, 9);
+        }
+    </style>
+</head>
+<!-- 主要内容 -->
+
+<body>
+    <div id="main">
+        <div class="test1">1</div>
+        <div class="test2">2</div>
+        <div class="test3">3</div>
+        <div class="test3">4</div>
+        <div class="test3">5</div>
+        <div class="test3">6</div>
+
+
+    </div>
+</body>
+
+</html>

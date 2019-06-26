@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>document-常用操作1</title>
+    <script>
+        function changeImg() {
+            //1.获取网页中的图片标签
+            var img = document.getElementsByClassName('icon')[0];
+            //2.改变src属性
+            img.src = 'image/blue.jpg';
+        }
+    </script>
+</head>
+
+<body>
+    <img class="icon" src="image/bgimage.png" alt="背景图片">
+    <p></p>
+    <button onclick="changeImg()">更改图片</button>
+</body>
+
+</html>

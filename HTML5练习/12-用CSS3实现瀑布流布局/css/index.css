@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    /* 定位 */
+    /* position: relative; */
+    /* 多栏布局 设置栏宽度*/
+    -webkit-column-width: 202px;
+    -moz-column-width: 202px;
+    column-width: 202px;
+}
+
+.box {
+    /* 内边距 */
+    padding: 15px 0 0 15px;
+    float: left;
+    /* background-color: red; */
+}
+
+.pic {
+    border: 1px solid #dddddd;
+    padding: 10px;
+    /* background-color: yellow; */
+}
+
+.pic img {
+    width: 165px;
+}

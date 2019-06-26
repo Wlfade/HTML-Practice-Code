@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- 根标签 -->
+<html>
+<!-- 头部 -->
+
+<head>
+    <!-- 设置编码 -->
+    <meta charset="UTF-8">
+    <!-- 标题标签 -->
+    <title>05-上下切换图片</title>
+
+</head>
+<!-- 主要内容 -->
+
+<body>
+    <img name="face" src="image/face-01.png" alt="face">
+    <p></p>
+    <button>上一张</button>
+    <button>下一张</button>
+
+    <script type="text/javascript">
+        //1.全局的变量
+        var maxIndex = 9;
+        var minIndex = 1;
+        var currentIndex = minIndex;
+
+        // 2.拿到要操作的标签
+        var img = document.getElementsByName('face')[0];
+        var pre = document.getElementsByTagName('button')[0];
+        var next = document.getElementsByTagName('button')[1];
+
+        console.log(img, pre, next);
+
+        //3.监听按钮的点击
+        //3.1 上一张
+        pre.onclick = function() {
+            if (currentIndex == minIndex) {
+                currentIndex = maxIndex;
+            } else {
+                currentIndex -= 1;
+            }
+            //改变src
+            img.src = 'image/face-0' + currentIndex + '.png';
+            console.log(img.src);
+        };
+        //3.2 下一张
+        next.onclick = function() {
+            if (currentIndex == maxIndex) {
+                currentIndex = minIndex;
+            } else {
+                currentIndex += 1;
+            }
+            //改变src
+            img.src = 'image/face-0' + currentIndex + '.png';
+            console.log(img.src);
+        };
+    </script>
+</body>
+
+</html>

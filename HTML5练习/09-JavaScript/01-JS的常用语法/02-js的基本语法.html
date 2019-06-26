@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- 根标签 -->
+<html>
+<!-- 头部 -->
+
+<head>
+    <!-- 设置编码 -->
+    <meta charset="UTF-8">
+    <!-- 标题标签 -->
+    <title>输出Hello World</title>
+    <script type="text/javascript">
+        // 1.基本的语法
+        var age = 18;
+        var money = 100.88;
+        var name = 'jack';
+        name2 = 'rose';
+        var result = true;
+        var number = null;
+        var number2 = undefined;
+
+        // 2.输出
+        console.log(age, money, name, name2, result, number, number2);
+
+        // 3.变量的真实类型
+        console.log(typeof age, typeof money, typeof name, typeof name2, typeof result, typeof number, typeof number2);
+
+        // 4.基本数据类型的运算
+        // 遵循的规律：运算从左往右；任何类型的变量与string类型的变量拼接就会被强转为string
+
+        //4.1 字符串的拼接
+        var newName = name + '-' + name2 + 'ddce';
+
+        //4.2题目
+        var str1 = 10 + 10 + '10'; //2010
+        var str2 = '10' + 10 + 10; //101010
+        var str3 = (10 + '10') + 10; //101010
+        console.log(str1, str2, str3);
+
+        //5. 数组
+        var numbers = [-10, 'san', name, result, number, ['哈哈', '呵呵']];
+
+        //5.1遍历数组
+        for (var i = 0; i < numbers.length; i++) {
+            console.log(numbers[i]);
+        }
+
+        //5.2 JS中的常用的属性
+        //删除数组中最后一个内容
+        numbers.pop;
+
+        numbers.push('小码哥');
+
+        for (var i in numbers) {
+            console.log(i, numbers[i]);
+        }
+
+        //6. JS 常用的类库 Math
+        var numsArr = [10, 212, 3223, 32];
+        var maxNum = Math.max(10, 21, 21);
+        var newMaxNum = Math.max.apply(this, numsArr);
+        var newMinNum = Math.min.apply(this, numsArr);
+
+        console.log(newMaxNum);
+        console.log(newMinNum);
+    </script>
+</head>
+<!-- 主要内容 -->
+
+<body>
+    <!-- <button onclick="alert('点了')">点我啊</button> -->
+</body>
+
+</html>

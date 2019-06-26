@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- 根标签 -->
+<html>
+<!-- 头部 -->
+
+<head>
+    <!-- 设置编码 -->
+    <meta charset="UTF-8">
+    <!-- 标题标签 -->
+    <title>07-JS中常见的事件</title>
+
+</head>
+<!-- 主要内容 -->
+
+<body>
+    <img src="image/bgimage.png">
+    <input type="text">
+    <script>
+        //当前页面加载完成
+        window.onload = function() {
+            // alert('页面加载完成');
+
+            // 获取img标签
+            var img = document.getElementsByTagName('img')[0];
+            // 获取input标签
+            var input = document.getElementsByTagName('input')[0];
+            // 鼠标进入图片
+            img.onmouseover = function() {
+                console.log('进入图片');
+            }
+            img.onmousemove = function() {
+                console.log('在图片中移动');
+            }
+            img.onmouseout = function() {
+                console.log('离开图片');
+            }
+
+            input.onfocus = function() {
+                input.style.width = '500px';
+                input.style.height = '60px';
+            }
+
+        }
+    </script>
+</body>
+
+</html>

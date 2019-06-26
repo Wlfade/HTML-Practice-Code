@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- 根标签 -->
+<html>
+<!-- 头部 -->
+
+<head>
+    <!-- 设置编码 -->
+    <meta charset="UTF-8">
+    <!-- 标题标签 -->
+    <title>CSS的常用属性</title>
+    <style>
+        div {
+            /* background-color: red; */
+            /* background: blue; */
+            /* 默认是平铺 no-repeat 不平铺*/
+            background: url("img/people.jpg");
+            background-size: cover;
+            width: 80%;
+            height: 500px;
+            /* 属性规定元素是否可见 */
+            /* visibility: hidden; */
+            /* display: none; */
+            /* 规定要显示的光标的类型（形状） */
+            cursor: pointer;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+        }
+        
+        p#main {
+            background-color: blue;
+            color: white;
+            cursor: move;
+            text-decoration: line-through;
+        }
+        
+        p.test1 {
+            /* 首行缩进 */
+            text-indent: 30px;
+            height: 30px;
+            background: yellow;
+            /* 处理超出的内容 hidden*/
+            overflow: scroll;
+        }
+        
+        p.test2 {
+            /* 首行缩进 */
+            text-indent: 7%;
+        }
+        
+        a {
+            /* 去除下划线 */
+            text-decoration: none;
+        }
+        
+        ul {
+            /* square circle */
+            list-style: circle;
+        }
+    </style>
+</head>
+<!-- 主要内容 -->
+
+<body>
+    <div>我是块级标签</div>
+    <p id="main">我是块级标签</p>
+    <p class="test1">我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签</p>
+    <p class="test2">我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签</p>
+    <p>我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签</p>
+    <p>我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签我是块级标签</p>
+
+
+    <span>我是行内块级标签</span>
+    <button>我是行内-块级标签</button>
+    <a href="#">我是超链接</a>
+
+    <ul>
+        <li>我是列表</li>
+        <li>我是列表</li>
+        <li>我是列表</li>
+        <li>我是列表</li>
+        <li>我是列表</li>
+    </ul>
+</body>
+
+</html>

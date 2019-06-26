@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    margin: 100px;
+}
+
+#tab {
+    border: 1px solid #dddddd;
+    width: 498px;
+    height: 120px;
+    /* 裁剪超出部分 */
+    overflow: hidden;
+}
+
+#tab-header {
+    height: 38px;
+    line-height: 38px;
+    background-color: #f7f7f7;
+    text-align: center;
+    position: relative;
+}
+
+#tab-header ul {
+    width: 501px;
+    position: absolute;
+    left: -1px;
+}
+
+#tab-header ul li {
+    float: left;
+    /* background-color: red; */
+    width: 98px;
+    /* 内填充 */
+    padding: 0 1px;
+    /* 下线 */
+    border-bottom: 1px solid #dddddd;
+}
+
+#tab-header ul li.selected {
+    background-color: white;
+    /* 下线 */
+    border-bottom: 0;
+    /* 内填充 */
+    padding: 0;
+    /* 设置左右线条 */
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+}
+
+#tab-content .dom {
+    display: none;
+}
+
+#tab-content .dom a {
+    /* background-color: green; */
+    width: 220px;
+    /* 左浮动 */
+    float: left;
+    margin: 8px;
+}

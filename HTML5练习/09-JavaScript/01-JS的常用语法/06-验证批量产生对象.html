@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- 根标签 -->
+<html>
+<!-- 头部 -->
+
+<head>
+    <!-- 设置编码 -->
+    <meta charset="UTF-8">
+    <!-- 标题标签 -->
+    <title>06验证</title>
+    <script type="text/javascript">
+        //1.创建对象 -> 构造函数
+        var Dog = function() {
+            this.name = null;
+            this.age = null;
+            this.dogFriends = [];
+            this.height = null;
+            this.eat = function(someThing) {
+                console.log(this.name + '吃' + someThing)
+            }
+            this.run = function(someWhere) {
+                console.log(this.name + '跑' + someWhere)
+            }
+        }
+
+        var Cat = function(name, age, catFriends, height, someThing, someWhere) {
+            this.name = name;
+            this.age = age;
+            this.catFriends = catFriends;
+            this.height = height;
+            this.eat = function(someThing) {
+                console.log(this.name + '吃' + someThing)
+            }
+            this.run = function(someWhere) {
+                console.log(this.name + '跑' + someWhere)
+            }
+        }
+
+        // 批量产生对象
+        var dog1 = new Dog();
+        dog1.name = 'ahuang';
+        dog1.age = 18;
+        dog1.dogFriends = ['212', '111'];
+        dog1.eat('hh');
+        dog1.run('tt');
+
+        var dog2 = new Dog();
+        dog2.name = 'huang';
+        dog2.age = 14;
+        dog2.dogFriends = ['2', '11'];
+        dog2.eat('hhhhhh');
+        dog2.run('ttyyyy');
+
+        console.log(dog1, dog2);
+
+
+        var cat1 = new Cat('lili', 12);
+        console.log(cat1);
+
+
+        var cat2 = new Cat('踢踢踢踢', 5, ['111', '222'], 0.3, '喵粮', '草地');
+        console.log(cat2);
+    </script>
+</head>
+<!-- 主要内容 -->
+
+<body>
+    <div>JS创建对象</div>
+</body>
+
+</html>

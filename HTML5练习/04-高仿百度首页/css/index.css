@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: black;
+}
+
+body {
+    background: url("../imgs/bgimage.png");
+    /* 背景尺寸 */
+    background-size: cover;
+}
+
+
+/* 头部 */
+
+#header {
+    background-color: rgba(0, 0, 0, 0.2);
+    /* 右对齐 */
+    text-align: right;
+    /* 设置上下间距 */
+    /* margin: 15px 0; */
+    /* 设置高度 */
+    height: 40px;
+    /* 设置行高 */
+    line-height: 40px;
+}
+
+
+/* 后台选择器 */
+
+#header a {
+    /* 加粗 */
+    font-weight: bolder;
+    /* 字体 */
+    font-family: sans-serif;
+    /* 文字大小 */
+    font-size: 15px;
+    /* 设置a标签外边距 */
+    margin-right: 8px;
+    color: white;
+}
+
+#header a.no-weight {
+    font-weight: normal;
+}
+
+#header a.more-product {
+    font-weight: normal;
+    background-color: #3385ff;
+    color: white;
+    /* 去除下划线 */
+    text-decoration: none;
+    /* 设置内边距 */
+    padding: 3px;
+}
+
+
+/* 中间内容 */
+
+#content .top-content {
+    /* 居中 */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#content .top-content img {
+    width: 270px;
+    height: 129px;
+}
+
+#content .bottom-content {
+    /* background-color: greenyellow; */
+    width: 600px;
+    height: 38px;
+    /* 居中 上 左右 下 */
+    margin: 0 auto 30px;
+}
+
+#content .bottom-content input {
+    width: 500px;
+    /* 和父标签保持100% */
+    height: 100%;
+    box-sizing: border-box;
+    /* 左内边距 */
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px solid #dddddd;
+}
+
+#content .bottom-content input:focus {
+    /* 去除外边线 */
+    outline: none;
+    border: 1px solid #3385ff;
+}
+
+#content .bottom-content a {
+    background-color: #3385ff;
+    color: white;
+    text-decoration: none;
+    width: 100px;
+    height: 100%;
+    /* 改变标签类型 */
+    /* display: inline-block; */
+    /* 浮动 */
+    float: right;
+    /* 水平居中和垂直居中 */
+    text-align: center;
+    line-height: 38px;
+}
+
+.quick-search {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.quick-search img {
+    background-color: white;
+    width: 101px;
+    height: 91px;
+    /* 设置外边间距 */
+    margin: 0 5px;
+}
+
+.quick-search img:hover {
+    /* 不透明度 */
+    opacity: 0.5;
+}
+
+
+/* 尾部 */
+
+#footer {
+    /* background-color: blue; */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 30px 0;
+    /* 内容居中 */
+    text-align: center;
+}
+
+.top-footer {
+    margin-bottom: 5px;
+}
+
+#footer a {
+    margin: 0 5px;
+    color: darkgray;
+}

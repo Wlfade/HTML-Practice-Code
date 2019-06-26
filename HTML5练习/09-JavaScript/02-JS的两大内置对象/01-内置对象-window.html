@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- 根标签 -->
+<html>
+<!-- 头部 -->
+
+<head>
+    <!-- 设置编码 -->
+    <meta charset="UTF-8">
+    <!-- 标题标签 -->
+    <title>01-内置对象-Window</title>
+    <script type="text/javascript">
+        // 第一大作用：
+        //1.1所有全局的变量都是window的属性
+        // 1.2所有的全局函数都是window的方法
+        // 全局的变量
+        var age = 17;
+        console.log(window.age);
+
+        // 全局的函数
+        function Dog() {
+            var name = 'hha';
+            console.log(name);
+        }
+
+        Dog();
+        window.Dog();
+
+        // window.alert('haha');
+        // window.console.log('全局的');
+
+        function Person() {
+            console.log(this);
+        }
+        Person(); //window
+        new Person(); //person
+
+        // 第二大作用
+        // 1.动态的跳转
+        alert(0);
+        // window.location.href = 'https://www.baidu.com';
+        // window.location.href = 'XMG2://openCamera?user=zhangsan'
+    </script>
+</head>
+<!-- 主要内容 -->
+
+<body>
+    <div>你好世界</div>
+</body>
+
+</html>

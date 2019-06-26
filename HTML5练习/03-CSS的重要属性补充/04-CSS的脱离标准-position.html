@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- 根标签 -->
+<html>
+<!-- 头部 -->
+
+<head>
+    <!-- 设置编码 -->
+    <meta charset="UTF-8">
+    <!-- 标题标签 -->
+    <title>04-CSS的脱离标准流-position</title>
+    <!-- 
+        子绝父相   子元素绝对定位，父元素相对定位。
+     -->
+    <style>
+        #main {
+            background-color: red;
+            margin: 60px;
+            width: 400px;
+            height: 200px;
+            /* 父类不可以注释这个 */
+            position: relative;
+        }
+        
+        .test1 {
+            background-color: green;
+            /* 浮动 */
+            position: absolute;
+            /* 定位 */
+            left: 20px;
+            top: 20px;
+            /* width: 200px;
+            height: 50px; */
+        }
+        
+        .test2 {
+            background-color: blue;
+            /* 浮动 */
+            position: absolute;
+            /* 定位 */
+            right: 20px;
+            bottom: 20px;
+            width: 200px;
+            height: 50px;
+        }
+        
+        .test3 {
+            background-color: orchid;
+            /* 停留在浏览器的底部 */
+            position: fixed;
+            /* 定位 */
+            right: 20px;
+            bottom: 0;
+            width: 100%;
+            height: 50px;
+        }
+    </style>
+</head>
+<!-- 主要内容 -->
+
+<body>
+    <div id="main">
+        <div class="test1">11111</div>
+        <div class="test2">22222</div>
+    </div>
+    <div class="test3">3333</div>
+
+</body>
+
+</html>

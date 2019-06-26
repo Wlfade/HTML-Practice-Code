@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- 根标签 -->
+<html>
+<!-- 头部 -->
+
+<head>
+    <!-- 设置编码 -->
+    <meta charset="UTF-8">
+    <!-- 标题标签 -->
+    <title>06-定时器</title>
+    <style>
+        body {
+            background-color: black;
+            text-align: center;
+            margin-top: 100px;
+        }
+        
+        div {
+            color: red;
+            font-size: 150px;
+        }
+        
+        img {
+            display: none;
+        }
+        
+        p {
+            display: none;
+            color: red;
+            font-size: 100px;
+        }
+    </style>
+</head>
+<!-- 主要内容 -->
+
+<body>
+    <img id="icon" src="image/dance.gif">
+    <p id="word">我对你的❤️滔滔不绝......</p>
+    <div id="number">4</div>
+
+    <script>
+        //1.拿到要操作的标签
+        var img = document.getElementById('icon');
+        var world = document.getElementById('word');
+        var number = document.getElementById('number');
+
+        //2.设置定时器
+        var time = setInterval(function() {
+            //1.改变倒计时的数字
+            number.innerText -= 1;
+            //2.判断
+            if (number.innerText == 0) {
+                //清除定时器
+                clearInterval(this.time);
+                // 显示 css + style
+                world.style.display = 'block';
+                img.style.display = 'inline-block';
+            }
+        }, 1000);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- 根标签 -->
+<html>
+<!-- 头部 -->
+
+<head>
+    <!-- 设置编码 -->
+    <meta charset="UTF-8">
+    <!-- 标题标签 -->
+    <title>JS常见的函数</title>
+    <script type="text/javascript">
+        // 1.1相加运算（两个数）
+        function sum(num1, num2) {
+            return num1 + num2;
+        }
+        // 如何调用
+        var result = sum(12, 323);
+        console.log(result);
+
+        // 1.2 万能的加法函数
+        function sum2(numbers) {
+            var result = 0;
+            for (var i in numbers) {
+                result += numbers[i];
+            }
+            return result;
+        }
+
+        var result1 = sum2([121, 121, 121, 121]);
+        console.log(result1);
+
+
+        // 1.3匿名函数
+        var res = function() {
+            console.log('这是一个匿名函数');
+        }
+        res();
+    </script>
+</head>
+<!-- 主要内容 -->
+
+<body>
+    <div>JS常见的函数</div>
+</body>
+
+</html>

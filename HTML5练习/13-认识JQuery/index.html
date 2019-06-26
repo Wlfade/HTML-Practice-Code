@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>03-认识JQuery</title>
+    <!--
+      JS存在的问题
+        1.JS存在兼容性的问题
+        2.存在复杂dom操作
+        3.复杂的特效和动画的实现
+        4.请求网络数据存在跨域问题
+
+      jquery出现
+        1.几乎不存在浏览器兼容问题
+        2.轻松实现 dom 操作和特效和动画的实现
+        3. 多种方式的网络请求方案
+
+    -->
+</head>
+
+<body>
+    <div id="main">
+        <div class="word">
+            <p>我是一段文字</p>
+            <p>我是一段文字</p>
+            <p>我是一段文字</p>
+            <p>我是一段文字</p>
+            <p>我是一段文字</p>
+        </div>
+    </div>
+    <div class="pic">
+        <img src="img/img_01.jpg" alt="image">
+        <img src="img/img_01.jpg" alt="image">
+        <img src="img/img_01.jpg" alt="image">
+        <img src="img/img_01.jpg" alt="image">
+        <img src="img/img_01.jpg" alt="image">
+    </div>
+    <button>显示</button>
+    <button>隐藏</button>
+    <button>切换</button>
+
+    <!-- 引用jquery类库 文档地址 http://jquery.cuishifeng.cn-->
+    <script src="js/jquery-1.11.3.min.js"></script>
+
+    <script>
+        //1. $() ----> jquery对象
+
+        //2. 拿到对应的标签 CSS选择器
+        // $(#main .word)
+        //console.log($('p'))
+
+        //3. 查看拿到的标签中的属性值
+        // console.log($('.word').attr('class'));
+
+        //4. 改变拿到的标签中的属性值
+        $('img').attr('src', 'img/img_04.jpg');
+        $('img').attr('width', '100px');
+
+        //5. 如何查看标签中内容
+        console.log($('p').text());
+
+        //6.改变
+        $('p').text('我是MT');
+
+        //7.事件
+        //7.1 显示
+        $('button').eq(0).on('click', function() {
+            $('p').show();
+            $('img').show();
+        });
+        //7.2 隐藏
+        $('button').eq(1).on('click', function() {
+            $('p').hide();
+            $('img').hide();
+        });
+        //7.3 切换
+        $('button').eq(2).on('click', function() {
+            $('p').toggle(2000);
+            $('img').toggle(2000);
+        });
+
+        //8. 遍历
+        var datas = [10, 20, 22, 333, 444, 555];
+        $.each(datas, function(index, value) {
+            console.log(index, value);
+        });
+
+        //9.取出对应的下标
+        console.log($.inArray(22, datas));
+
+        //10. 写CSS
+        $('.word').css({
+            background: 'red',
+            border: '1px solid green',
+        });
+    </script>
+</body>
+
+</html>

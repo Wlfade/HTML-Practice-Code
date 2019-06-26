@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- 根标签 -->
+<html>
+<!-- 头部 -->
+
+<head>
+    <!-- 设置编码 -->
+    <meta charset="UTF-8">
+    <!-- 标题标签 -->
+    <title>JS创建对象</title>
+    <script type="text/javascript">
+        //1.创建对象
+        var dog = {
+                name: 'ahuang',
+                age: 18,
+                height: 1.55,
+                dogFriends: ['lili', 'wangcai'],
+                eat: function(something) {
+                    console.log(this.name + '吃' + something);
+                },
+                run: function(someWhere) {
+                    console.log(this.name + '跑' + someWhere);
+                }
+            }
+            // 2.输出狗对象和行为
+        console.log(dog.age);
+        console.log(dog.name);
+        dog.eat('肉');
+        dog.run('操场');
+    </script>
+</head>
+<!-- 主要内容 -->
+
+<body>
+    <div>JS创建对象</div>
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* 引入外部字体 */
+
+@font-face {
+    /* font-family: 'WenYueTmp';
+    src: url('../font/WenYueTmp.ttf'); */
+    font-family: 'WenYueTmp';
+    src: url('../font/WenYueTmp.ttf');
+}
+
+a {
+    /* 去除下划线 */
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    /* 不设置平铺 */
+    background: url(../imgs/yellow-bg.jpg)no-repeat;
+    /* 让背景图基于容器大小伸缩 */
+    background-size: cover;
+    /* font-family: WenYueTmp; */
+    margin-top: 50px;
+}
+
+#top {
+    position: fixed;
+    top: 0;
+    background: url(../imgs/yellow-bg.jpg)no-repeat;
+    /* 让背景图基于容器大小伸缩 */
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+
+/* 头部 */
+
+#header {
+    background-color: red;
+    height: 3px;
+}
+
+
+/* 导航 */
+
+#nav {
+    text-align: center;
+}
+
+#nav ul {
+    display: inline-block;
+}
+
+#nav ul li {
+    display: inline-block;
+}
+
+#nav ul li a {
+    /* 改变标签的类型 */
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    /* 垂直居中 */
+    line-height: 50px;
+    /* 文字大小 */
+    font-size: 35px;
+    margin: 0;
+}
+
+#nav ul li a.selected,
+#nav ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/* 列表 */
+
+#list {
+    margin-top: 100px;
+    /* 水平居中 */
+    text-align: center;
+}
+
+#list .love {
+    width: 242px;
+    /* 改变标签的类型 */
+    display: inline-block;
+    text-align: left;
+    background-color: pink;
+}
+
+#list .love .image {
+    width: 242px;
+    height: 121px;
+    /* background-color: red; */
+    background: url('../imgs/pink-bg.jpg');
+    text-align: center;
+    display: inline-block;
+}
+
+#list .love img {
+    width: 121px;
+    height: 121px;
+    display: inline-block;
+}
+
+#list .love p {
+    font-family: sans-serif;
+    margin: 7px 0;
+    /* 首行缩进 */
+    text-indent: 30px;
+}
+
+#list a {
+    background-color: orange;
+    display: inline-block;
+    width: 140px;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 20px;
+    /* 居中 */
+    text-align: center;
+    line-height: 45px;
+}
+
+#list a:hover {
+    background-color: black;
+}
+
+#footer {
+    text-align: center;
+}
+
+#footer h2 {
+    color: white;
+    font-size: 35px;
+    margin: 8px;
+}
+
+#footer ul,
+#footer ul li {
+    display: inline-block;
+}
+
+#footer ul li img {
+    width: 40px;
+    height: 40px;
+    margin: 0 3px 10px;
+}
+
+#footer ul li img:hover {
+    /* 设置不透明度 */
+    opacity: 0.7;
+}
+
+
+/*自适应布局 max-device-width */
+
+@media screen and (max-width: 1095px) {
+    #nav ul li a {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 844px) {
+    body {
+        margin-top: 70px;
+    }
+    #nav ul li a {
+        width: 60px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 10px;
+    }
+    #list {
+        margin-top: 20px;
+    }
+    #list .love {
+        width: 200px;
+    }
+    #list .love .image {
+        width: 200px;
+        height: 100px;
+    }
+    #list .love img {
+        width: 100px;
+        height: 100px;
+    }
+    #list .love p {
+        padding: 0 10px;
+        font-size: 10px;
+    }
+}

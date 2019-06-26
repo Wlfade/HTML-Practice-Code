@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- 根标签 -->
+<html>
+<!-- 头部 -->
+
+<head>
+    <!-- 设置编码 -->
+    <meta charset="UTF-8">
+    <!-- 标题标签 -->
+    <title>CSS的不可继承属性</title>
+    <style>
+        #main {
+            background-color: red;
+            width: 500px;
+            height: 300px;
+        }
+        
+        .test1 {
+            width: 100px;
+            background-color: green;
+        }
+    </style>
+</head>
+<!-- 主要内容 -->
+
+<body>
+    <div id="main">我是块级标签
+        <div class="test1">
+            我是一个子块级标签
+        </div>
+    </div>
+    <span>我是行内块级标签</span>
+    <button>我是行内-块级标签</button>
+</body>
+
+</html>

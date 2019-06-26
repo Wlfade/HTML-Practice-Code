@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- 根标签 -->
+<html lang="en">
+<!-- 头部 -->
+
+<head>
+    <!-- 设置编码 -->
+    <meta charset="UTF-8">
+    <!-- 标题标签 -->
+    <!-- 
+        所有标签水平居中：
+        行内标签 和 行内-块级标签：在父标签中设置 text-align : center;
+        块级标签：在自身设置 margin：0 auto;
+
+
+        所有标签垂直居中：
+        行内标签 和 行内-块级标签：在父标签中设置 line-height
+        块级标签：position: absolute;
+                left:50%;
+                top:50%;
+                transform:translate(-50%,-50%);
+     -->
+    <title>水平居中和垂直居中</title>
+    <style>
+        #main {
+            background-color: red;
+            width: 500px;
+            height: 200px;
+            /* 让内容居中 可以被继承 作用在文字图片上 但无法作用在块级标签上 */
+            text-align: center;
+            /* 垂直居中 */
+            line-height: 200px;
+            position: relative;
+        }
+        
+        span {
+            background-color: yellow;
+        }
+        
+        .test1 {
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+            background-color: oldlace;
+            /* 左边空隙自动  右边空隙自动 */
+            /* 
+            margin-left: auto;
+            margin-right: auto; */
+            margin: 0 auto;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        input {
+            width: 500px;
+            padding-left: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<!-- 主要内容 -->
+
+<body>
+    <div id="main">
+        <!-- 行内标签 -->
+        <!-- <span>行内标签</span> -->
+
+        <!-- 行内-块级标签 -->
+        <!-- <button>行内-块级标签</button> -->
+
+        <!-- 块级标签 -->
+        <div class="test1">块级标签</div>
+
+    </div>
+
+    <p></p>
+    <input type="text">
+</body>
+
+</html>

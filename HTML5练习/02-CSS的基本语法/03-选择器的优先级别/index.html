@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- 根标签 -->
+<html>
+<!-- 头部 -->
+
+<head>
+    <!-- 设置编码 -->
+    <meta charset="UTF-8">
+    <!-- 标题标签 -->
+    <title>选择器的优先级别</title>
+    <!-- 
+        css样式遵循的规律：
+        1.相同类型的选择器：a.就近原则 b.叠加原则
+        2.不同类型的选择器遵循：
+            1.选择器的针对性越强，它的优先级就越高
+            2.选择器的权值加到一起，大的优先；如果权值相同，后定义优先
+            3.important > 内联 > id选择器 > 类选择器 | 伪类 | 属性选择器 | 伪元素 > 标签选择器 > 通配符 > 继承
+     -->
+    <style>
+        /* 复合选择器 */
+        
+        div.test1 {
+            /* 权值 10+1 */
+            color: cyan;
+        }
+        /* 复合选择器 */
+        
+        div#main {
+            /* 权值 100+1 */
+            color: purple;
+        }
+        /* id选择器 */
+        
+        #main {
+            /* 权值:100 */
+            color: green;
+        }
+        /* id选择器 只能有一个值*/
+        /* 类选择器 */
+        
+        .test1 {
+            /* 权值:10 */
+            color: orange;
+        }
+        /* 类选择器 */
+        
+        .test2 {
+            /* 权值:10 */
+            color: yellow;
+        }
+        /* 标签选择器 */
+        
+        div {
+            /* 权值:1 */
+            color: red !important;
+        }
+        /* 通配符
+            1.优先级别非常低
+            2.性能比较差
+         */
+        
+        * {
+            /* 权值:0 */
+            font-size: 30px;
+        }
+    </style>
+</head>
+<!-- 主要内容 -->
+
+<body>
+    <div id="main" class="test1 test2" style="color: rosybrown">我是用来测试选择器的优先级别的</div>
+</body>
+
+</html>

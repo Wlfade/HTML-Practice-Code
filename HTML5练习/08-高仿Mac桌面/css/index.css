@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: black;
+}
+
+body {
+    /* 不设置平铺 */
+    background: url(../images/bgimage.jpg)no-repeat;
+    /* 让背景图基于容器大小伸缩 */
+    background-size: cover;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* 头部 */
+
+#header {
+    background-color: rgba(241, 241, 241, 0.8);
+    height: 38px;
+    width: 100%;
+    line-height: 38px;
+    /* 定位 */
+    position: fixed;
+    top: 0;
+    font-size: 18px;
+}
+
+.header-left {
+    display: inline-block;
+    line-height: 38px;
+}
+
+.header-left li {
+    display: inline-block;
+    line-height: 38px;
+    float: left;
+    margin-left: 8px;
+}
+
+.header-right {
+    display: inline-block;
+    line-height: 38px;
+    float: right;
+}
+
+.header-right li {
+    display: inline-block;
+    line-height: 38px;
+    float: right;
+    margin-right: 8px;
+}
+
+#content {
+    display: inline-block;
+    padding-top: 100px;
+    color: white;
+}
+
+#content .file {
+    margin-left: 40px;
+}
+
+#content img {
+    width: 60px;
+    height: 60px;
+}
+
+
+/* 尾部 */
+
+#footer {
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.dock {
+    height: 100%;
+    width: 60%;
+    background: url(../images/yellow-bg.jpg) no-repeat;
+    background-size: cover;
+    /* 居中 */
+    margin: 0 auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+}
+
+#footer .dock ul {
+    display: inline-block;
+}
+
+#footer .dock li {
+    float: left;
+    /* 动画的过渡效果 */
+    -webkit-transition: linear 0.25s;
+    -moz-transition: linear 0.25s;
+    -ms-transition: linear 0.25s;
+    -o-transition: linear 0.25s;
+    transition: linear 0.25s;
+}
+
+#footer .dock li:hover {
+    /* 动画方向 */
+    -webkit-transform-origin: center bottom;
+    /* 设置动画效果 */
+    -webkit-transform: scale(1.5);
+}
+
+#footer .dock img {
+    width: 50px;
+    height: 50px;
+    margin: 0 7px;
+}

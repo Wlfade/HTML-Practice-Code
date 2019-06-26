@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>document-常用操作2</title>
+
+</head>
+
+<body>
+    <img class="icon" src="image/bgimage.png" alt="背景图片">
+    <img name="tu" src="image/bgimage.png" alt="背景图片">
+    <p id="word">这里有一张图片</p>
+    <p></p>
+    <button>隐藏</button>
+
+    <script>
+        //1.获取所有要操作的标签
+        var img1 = document.getElementsByClassName('icon')[0];
+        var img2 = document.getElementsByName('tu')[0];
+        var p = document.getElementById('word');
+        var btn = document.getElementsByTagName('button')[0];
+        console.log(btn);
+        //1.2监听按钮的点击
+        btn.onclick = function() {
+            //隐藏 css 属性 style display
+            if (btn.innerText == '隐藏') {
+                p.style.display = 'none';
+                img1.style.display = 'none';
+                img2.style.display = 'none';
+                btn.innerText = '显示';
+            } else {
+                p.style.display = 'block';
+                img1.style.display = 'inline-block';
+                img2.style.display = 'inline-block';
+                btn.innerText = '隐藏';
+            }
+
+        }
+    </script>
+</body>
+
+</html>

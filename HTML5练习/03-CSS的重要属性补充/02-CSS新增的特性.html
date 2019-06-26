@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- 根标签 -->
+<html lang="en">
+<!-- 头部 -->
+
+<head>
+    <!-- 设置编码 -->
+    <meta charset="UTF-8">
+    <!-- 标题标签 -->
+    <title>盒子模型</title>
+    <style>
+        div {
+            width: 200px;
+            height: 60px;
+            /* 设置外边框 */
+            margin: 50px;
+            /* 设置内边距 */
+            padding: 20px;
+            /* 设置盒子阴影 */
+            box-shadow: -10px -5px 10px green;
+            /* 设置圆角 */
+            /* border-radius: 100px; */
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+        
+        .test1 {
+            background-color: rgba(255, 0, 0, 1.0);
+        }
+        
+        .test2 {
+            background-color: rgba(255, 0, 0, 0.8);
+        }
+        
+        .test3 {
+            background-color: rgba(255, 0, 0, 0.6);
+        }
+        
+        .test4 {
+            background-color: rgba(255, 0, 0, 0.4);
+        }
+        
+        .test5 {
+            background-color: rgba(255, 0, 0, 0.2);
+        }
+        
+        p {
+            font-size: 100px;
+            color: red;
+            /* 文字阴影 */
+            /* h-shadow:必选水平阴影的位置，允许负值 */
+            /* v-shadow:必选水平阴影的位置，允许负值 */
+            /* blur:可选，模糊距离 */
+            /* spread:可选，阴影的尺寸 */
+            /* color:可选，阴影的颜色 */
+            /* inset:可选，将外部阴影（outset）改成内部阴影 */
+            text-shadow: -10px 5px 10px rgba(200, 100, 144, 1)
+        }
+    </style>
+</head>
+<!-- 主要内容 -->
+
+<body>
+    <div class="test1">我是一个盒子1</div>
+    <div class="test2">我是一个盒子2</div>
+    <div class="test3">我是一个盒子3</div>
+    <div class="test4">我是一个盒子4</div>
+    <div class="test5">我是一个盒子5</div>
+    <p>段落标签</p>
+</body>
+
+</html>

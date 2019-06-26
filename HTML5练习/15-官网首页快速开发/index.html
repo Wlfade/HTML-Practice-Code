@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <!-- 适配IE浏览器 -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <!-- 会根据设备的尺寸约束Window的大小 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>网页快速开发</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- 导航 -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">练习网页</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">简介 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">综述</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">学院 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">iOS 学院</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">JAVA 学院</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">安卓学院</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">C++ 学院</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">UI 学院</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" data-toggle="modal" data-target="#xmg">关于</a></li>
+                </ul>
+
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- 焦点图 -->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- 指示器 -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- 中间的内容 -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="image/nav-01.jpg" alt="iOS学院">
+                <div class="carousel-caption">
+                    <p>你们最厉害？</p>
+                    <button class="btn btn-success">是的</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/nav-02.jpg" alt="JAVA学院">
+                <!-- <div class="carousel-caption">
+                    
+                </div> -->
+            </div>
+            <div class="item">
+                <img src="image/nav-03.jpg" alt="UI学院">
+                <!-- <div class="carousel-caption">
+                    ...
+                </div> -->
+            </div>
+        </div>
+
+        <!-- 控制 -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">上一张</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">下一张</span>
+        </a>
+    </div>
+    <!-- 主要内容 -->
+    <div id="main">
+        <!-- 上部分 -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="image/share-qq.png" alt="qq分享" class="img-circle">
+                    <h1>QQ分享</h1>
+                    <p style="background-color:yellow">QQ,二级库挂机了四个即可估计你肯德基冯建国is了Gigi该机构揽胜极光
+                    </p>
+                    <button class=" btn btn-danger ">分享</button>
+                </div>
+                <div class="col-md-4 ">
+                    <img src="image/share-weixin.png " alt="微信分享 " class="img-circle ">
+                    <h1>微信分享</h1>
+                    <p style="background-color: red ">微信,将诶过IE累死了我哥几个蓝色钢结构色戒个IE老司机各模块二极管is肋骨即可
+                    </p>
+                    <button class="btn btn-danger ">分享</button>
+                </div>
+                <div class="col-md-4 ">
+                    <img src="image/share-weibo.png " alt="微博分享 " class="img-circle ">
+                    <h1>微博分享</h1>
+                    <p style="background-color:blue ">微博,看到了这个网页的人你好，人生还是美好的加油。
+                    </p>
+                    <button class="btn btn-danger ">分享</button>
+                </div>
+            </div>
+        </div>
+        <!-- 下部分 -->
+        <div id="tab">
+            <!-- 头部 -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">safari浏览</a></li>
+                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">火狐浏览</a></li>
+                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">谷歌浏览</a></li>
+            </ul>
+            <!-- 内容面板 -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="home">
+                    <div class="row">
+                        <div class="col-md-5 ">
+                            <img src="image/safari-logo.jpg" class="img-responsive">
+                        </div>
+                        <div class="col-md-7 ">
+                            <h1>Safari<span>浏览器</span></h1>
+                            <p class="lead">它不仅速度更快，而且能效出色，从而令网站的响应更灵敏，笔记本电脑电池单次充电的运行时间也更长。内置隐私功能可以帮助你保护自己的网页浏览信息；众多趁手工具，帮助你保存、寻找和分享你喜爱的各种内容；而 Safari 浏览器与 iCloud 相配合，还能让你在所有设备之间无缝浏览</p>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="profile">
+                    <div class="row">
+                        <div class="col-md-7 ">
+                            <h1>火狐<span>浏览器</span></h1>
+                            <p class="lead">是一个自由及开放源代码的网页浏览器，使用Gecko排版引擎，支持多种操作系统，如Windows、Mac OS X及GNU/Linux等。</p>
+                        </div>
+                        <div class="col-md-5 ">
+                            <img src="image/fireFox-logo.png" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="messages">
+                    <div class="row">
+                        <div class="col-md-5 ">
+                            <img src="image/chrome-logo.jpg" class="img-responsive">
+                        </div>
+                        <div class="col-md-7 ">
+                            <h1>Google<span>浏览器</span></h1>
+                            <p class="lead">Google Chrome是一款由Google公司开发的网页浏览器，该浏览器基于其他开源软件撰写，包括WebKit，目标是提升稳定性、速度和安全性，并创造出简单且有效率的使用者界面。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 尾部横线 -->
+    <hr>
+    <!-- 尾部 -->
+    <footer>
+        <p class="pull-left">尾部乱七八糟</p>
+        <p class="pull-right"><a href="#" target="_top"> 回到顶部</a></p>
+    </footer>
+
+    <!-- 模态框 -->
+    <div class="modal fade" id="xmg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">关于小码哥</h4>
+                </div>
+                <div class="modal-body">
+                    <p>爱情是人与人之间的强烈的依恋、亲近 爱情 爱情(5张) 、向往，以及无私并且无所不尽其心的情感。它通常是情与欲的对照，爱情 [3] 由情爱和性爱两个部分组成，情爱是爱情的灵魂，性爱是爱情的附加属性，并不是必要存在的，情爱才是爱情的根本与核心。</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary">我不同意</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.11.3.min.js "></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js "></script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- 根标签 -->
+<html>
+<!-- 头部 -->
+
+<head>
+    <!-- 设置编码 -->
+    <meta charset="UTF-8">
+    <!-- 标题标签 -->
+    <title>CSS的常见选择器</title>
+    <style>
+        /* 标签选择器 */
+        
+        div {
+            color: rebeccapurple;
+        }
+        
+        p {
+            color: blue;
+        }
+        /* 类选择器 */
+        
+        .test1 {
+            color: green;
+        }
+        /* id选择器 */
+        
+        #main {
+            font-size: 40px;
+        }
+        /* 并列选择器 */
+        
+        #main,
+        .test1 {
+            border: 1px solid rosybrown
+        }
+        /* 复合选择器 */
+        
+        p.test1 {
+            color: yellow;
+            background-color: red;
+        }
+        /* 后代标签 */
+        
+        div p {
+            color: cyan;
+        }
+        /* 直接后代选择器 */
+        
+        div>a {
+            color: grey;
+        }
+        /* 伪类 */
+        
+        input:focus {
+            /* 去除外线条 */
+            outline: none;
+            /* 改变宽度和高度 */
+            widows: 500px;
+            height: 50px;
+            /* 改变文字的大小 */
+            font-size: 20px;
+        }
+        
+        #main:hover {
+            width: 300px;
+            height: 200px;
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<!-- 主要内容 -->
+
+<body>
+    <div id="main">div标签</div>
+    <div>div标签</div>
+    <div>div标签</div>
+    <p class="high">段落标签</p>
+    <p>段落标签</p>
+    <p>段落标签</p>
+    <p>段落标签</p>
+    <p class="test1">段落标签</p>
+    <div class="test1">div标签</div>
+
+
+    <div>
+        <a href="#">一级超链接</a>
+        <p>
+            <a href="#">二级超链接</a>
+        </p>
+        <p>第二段文字</p>
+        <span>
+                <p>第三段文字</p>
+            </span>
+    </div>
+    <p>第一段文字</p>
+    <input type="text" placeholder="默认文字">
+</body>
+
+</html>

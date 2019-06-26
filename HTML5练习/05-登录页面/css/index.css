@@ -1,0 +1,180 @@
+a,
+address,
+b,
+big,
+blockquote,
+body,
+center,
+cite,
+code,
+dd,
+del,
+div,
+dl,
+dt,
+em,
+fieldset,
+font,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+i,
+iframe,
+img,
+ins,
+label,
+legend,
+li,
+ol,
+p,
+pre,
+small,
+span,
+strong,
+u,
+ul,
+var {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    /* 去除下划线 */
+    text-decoration: none;
+    font-size: 13px;
+    color: darkgrey;
+}
+
+body {
+    background: url(../image/bgimage.png)no-repeat;
+    background-size: cover;
+    /* 水平居中 */
+    text-align: center
+}
+
+
+/* 面板 */
+
+#panel {
+    background-color: white;
+    /* 改变标签的类型 */
+    display: inline-block;
+    /* 子标签并不是居中的 */
+    text-align: left;
+    margin-top: 200px;
+    /* 设置内边距 */
+    padding: 30px;
+    /* 设置圆角 */
+    border-radius: 5px;
+    /* 设置块阴影 */
+    box-shadow: -20px -20px 50px;
+}
+
+
+/* 面板的头部 */
+
+#panel-header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#panel-header h2 {
+    font-size: 22px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dddddd;
+}
+
+
+/* 面板的中间内容 */
+
+#panel-content {}
+
+.user-pwd {
+    /* background-color: red; */
+    margin-bottom: 15px;
+    height: 38px;
+    position: relative;
+}
+
+.user-pwd img {
+    position: absolute;
+    left: 5px;
+    top: 6px;
+    width: 26px;
+    height: 26px;
+}
+
+.user-pwd input {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: 38px;
+    /* 设置圆角 */
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+}
+
+.user-pwd input:focus {
+    outline: none;
+    /* 改变边框的颜色 */
+    border-color: orange;
+    box-shadow: 0 0 15px orange;
+}
+
+
+/* 一些设置 */
+
+#setting {
+    margin-bottom: 15px;
+}
+
+.forget-pwd {
+    float: right;
+}
+
+
+/* 登录按钮 */
+
+#btn {
+    width: 100%;
+    height: 35px;
+    border: 0;
+    background-color: orange;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+}
+
+#btn:focus {
+    outline: none;
+}
+
+
+/* 注册新账号 */
+
+#reg {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 13px;
+}
+
+#reg a {
+    color: orange;
+}
+
+#panel-footer {
+    height: 38px;
+    line-height: 38px;
+}
+
+#panel-footer img {
+    width: 30px;
+    height: 30px;
+    /* 图片居中 */
+    vertical-align: middle;
+}

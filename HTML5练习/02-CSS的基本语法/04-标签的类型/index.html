@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- 根标签 -->
+<html>
+<!-- 头部 -->
+
+<head>
+    <!-- 设置编码 -->
+    <meta charset="UTF-8">
+    <!-- 标题标签 -->
+    <title>常见的标签类型</title>
+    <style>
+        div {
+            background-color: red;
+            width: 200px;
+            height: 80px;
+            /* 隐藏标签 */
+            /* display: none; */
+            /* 改变标签的类型：块级---> 行内标签 */
+            /* display: inline; */
+            /* 改变标签类型：块级--->行内-块级标签 */
+            display: inline-block;
+        }
+        
+        p {
+            background-color: yellow;
+            width: 100px;
+            height: 80px;
+            /* 改变标签的类型：块级---> 行内标签 */
+            /* display: inline; */
+            /* 改变标签类型：块级--->行内-块级标签 */
+            display: inline-block;
+        }
+        
+        span {
+            background-color: aqua;
+            width: 300px;
+            height: 90px;
+            /* 改变标签类型：行内--->块级标签 */
+            /* display: block; */
+            /* 改变标签类型：行内--->行内-块级标签 */
+            display: inline-block;
+        }
+        
+        button {
+            width: 100px;
+            height: 80px;
+        }
+    </style>
+</head>
+<!-- 主要内容 -->
+
+<body>
+    <!-- 块级标签 -->
+    <div>div标签</div>
+    <p>段落标签</p>
+
+    <!-- 行内标签 -->
+    <span>span标签</span>
+    <span>span标签</span>
+    <span>span标签</span>
+    <span>span标签</span>
+    <span>span标签</span>
+
+    <a href="#">我是超链接</a>
+    <a href="#">我是超链接</a>
+    <a href="#">我是超链接</a>
+    <a href="#">我是超链接</a>
+
+    <!-- 行内-块级标签 -->
+    <input type="text">
+    <button>我是按钮</button>
+    <button>我是按钮</button>
+
+</body>
+
+</html>

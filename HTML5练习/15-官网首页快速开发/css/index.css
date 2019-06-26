@@ -1,0 +1,60 @@
+body {
+    padding-top: 50px;
+}
+
+#main {
+    padding: 30px;
+    text-align: center;
+}
+
+#main .container-fluid .row .col-md-4 {
+    margin-bottom: 20px;
+}
+
+#main .container-fluid .row .col-md-4 img {
+    background-color: palegoldenrod;
+    width: 140px;
+}
+
+#main .container-fluid .row .col-md-4 p {
+    height: 60px;
+    text-indent: 28px;
+}
+
+#tab {
+    margin-top: 15px;
+}
+
+#tab .tab-content h1 {
+    color: red;
+}
+
+#tab .tab-content h1 span {
+    color: grey;
+    font-size: 20px;
+}
+
+#tab .tab-content img {
+    padding: 60px;
+}
+
+#tab .tab-content h1 p {
+    color: gray;
+    text-align: left;
+    text-indent: 28px;
+    font-size: 20px;
+}
+
+#tab .tab-content .col-md-7 {
+    margin-top: 100px;
+}
+
+@media screen and (max-width:990px) {
+    #tab .tab-content .col-md-7 {
+        margin-top: 10px;
+    }
+    #tab .tab-content img {
+        width: 371px;
+        padding: 60px;
+    }
+}
